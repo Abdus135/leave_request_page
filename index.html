@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../Leave_Page_UI_New_HRMS/Calender/css/style.css">
+  <link href="../Leave_Page_UI_New_HRMS/bootstrap.min.css" rel="stylesheet" />
+  <link href="../Leave_Page_UI_New_HRMS/index.css" rel="stylesheet" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+  <link href="icomoon/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+</head>
+
+<body>
+  <div class="top_bar bg-primary">
+    <p class="d-2">LEAVE REQUEST</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="date_input">
+        <div class="from">
+          <small class="text-muted"><b>FROM</b></small>
+          <small><input type="text" class="form-control datepicker-input_from" data-coreui-date="2023/03/15"
+              id="date-from" /></small>
+          <img src="../Leave_Page_UI_New_HRMS/calendar.png" id="date-icon-from" />
+        </div>
+        <div class="to">
+          <small class="text-muted"><b>TO</b></small>
+          <input type="text" class="form-control datepicker-input_to" id="date-to" data-coreui-date="2023/03/15" />
+          <img src="../Leave_Page_UI_New_HRMS/calendar.png" id="date-icon-to" />
+        </div>
+      </div>
+      <div class="check_box">
+        <div class="check_box_inner">
+          <input type="checkbox" id="first" class="checkbox" />
+          <small><b>Use Floater day leave on <span>14/02</span> and
+              <span>18/02</span></b></small>
+        </div>
+        <div class="check_box_inner">
+          <input type="checkbox" id="first" class="checkbox" />
+          <small><b>Use Birthday special leave on <span>17/02</span> </b></small>
+        </div>
+      </div>
+      <div class="leave_type">
+        <small class="text-muted fw-bolder mb-1">SELECT LEAVE TYPES</small>
+        <small><select class="form-select">
+            <option id="casual_leave">Casual Leave</option>
+            <option id="sick_leave">Sick Leave</option>
+            <option id="Paternal_leave">Paternal Leave</option>
+          </select></small>
+      </div>
+      <div class="check_box">
+        <div class="check_box_inner mt-3">
+          <input type="checkbox" id="half_day" class="checkbox" />
+          <small><b>Avail Half Day</b></small>
+        </div>
+      </div>
+      <div class="note">
+        <small class="text-muted">NOTE &ensp; <i>Required</i></small>
+        <textarea class="form-control" id="textAreaExample1" rows="3" cols="2"></textarea>
+      </div>
+      <div class="notify">
+        <small class="text-muted">NOTIFY</small>
+        <textarea class="form-control" id="textAreaExample1" rows="1"></textarea>
+        <small class="text-muted"><i>These employees are notified when your leave request is
+            approved</i></small>
+      </div>
+      <div class="request_leave_button">
+        <div class="row">
+          <div class="col-md-4">
+            <button type="button" class="btn btn-secondary cancel_btn">Cancel</button>
+          </div>
+          <div class="col-md-4">
+            <button type="button" class="btn btn-success request_btn">
+              Request Leave
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 second ">
+      <div class="parent_div">
+        <div class="leave_request_para bg-white">
+          <small class="fw-bolder">Leave requested for three working days.<br /></small>
+          <small class="fw-bolder"><span>1 </span>Floater day included</small>
+        </div>
+      </div>
+      <div class="on_leave_parent mt-5 bg-secondary">
+        <div class="on_leave bg-white">
+          <small class="text-muted fw-bolder">ALSO ON LEAVE DURING THIS PERIOD</small>
+          <div class="profile_id_list row">
+            <div class="profile_id col-sm text-center">
+              <img src="./image/avatar-4.png" class="rounded-circle" /><br />
+              <small class="d-inline-block text-truncate fw-bolder" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Murthiyunja">Murthiyunja</small>
+            </div>
+            <div class="profile_id col-sm text-center">
+              <img src="./image/avatar-1.png" class="rounded-circle" /><br />
+              <small class="d-inline-block text-truncate fw-bolder" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Vijay">Vijay</small>
+            </div>
+            <div class="profile_id col-sm text-center">
+              <img src="./image/avatar-2.png" class="rounded-circle" /><br />
+              <small class="d-inline-block text-truncate fw-bolder" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Paonima">Paonima</small>
+            </div>
+            <div class="profile_id col-sm text-center">
+              <img src="./image/avatar-3.png" class="rounded-circle" /><br />
+              <small class="d-inline-block text-truncate fw-bolder" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Rajkumar">Rajkumar</small>
+            </div>
+            <div class="profile_id col-sm" style="margin-top: 12px">
+              <small class="text-primary fw-bolder profile_id_more">5 More</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="leave_restriction mt-5">
+        <div class="mb-3"><small class="text-danger fw-bolder ">LEAVE RESTRICTIONS</small></div>
+        <div class="bg-danger outer_div">
+          <div class="bg-white text-danger " style="margin-left: 3px; padding-left: 15px; font-weight: 600;">
+            <small>Minimum Proir notice of 2 days is required for applying privileged leave.</small></div>
+        </div>
+        <div class="bg-danger outer_div">
+          <div class="bg-white text-danger " style="margin-left: 3px; padding-left: 15px; font-weight: 600;"><small>You
+              are allowed to take only 5 consecutive privileged leave.</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+
+      <!-- From Calender has been started -->
+       <div class="team_leave_calender_parent">
+      <div class="team_leave_calender">
+        <div class="justify-content-center">
+          <div class=" text-start mb-3 team_calender_head">
+            <small class="fw-bolder">TEAM LEAVE CALENDER</small>
+            <div class="head-info">
+              <div class="head-day d-none" style="color: black;"></div>
+              <div class="w-55 button-wrap button-wrap-responsive">
+                <div class="pre-button "><i
+                    class="fa fa-chevron-left"></i></div>
+                <div class="head-month" style="color: black;"></div>
+                <div class="next-button "><i
+                    class="fa fa-chevron-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="elegant-calencar ">
+
+          <div class="calendar-wrap">
+
+            <table id="calendar">
+              <thead class="table_head">
+                <tr class="table_row">
+                  <th class="table_h">Sun</th>
+                  <th class="table_h">Mon</th>
+                  <th class="table_h">Tue</th>
+                  <th class="table_h">Wed</th>
+                  <th class="table_h">Thu</th>
+                  <th class="table_h">Fri</th>
+                  <th class="table_h">Sat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table_row">
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                  <td class="table_data"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="team_leave_calender_points">
+          <div class="para1">
+            <span class="circular_point" ></span>&nbsp;<small class="text-muted "><span class="fw-bolder text-black"> 10/03 Fri</span> : Vijay Prakash,Shantanu,Shayam Sundar,Rahul Dev</small>
+          </div>
+          <div class="para1">
+            <span class="circular_point" style="background-color: green;" ></span>&nbsp;<small class="text-muted"><span class="fw-bolder text-black"> 10/03 Fri</span> : <span class="fw-bolder">6 Employees</span> Vijay Prakash,Shantanu,Shayam Sundar,Rahul Dev</small>
+          </div>
+          <div class="para1">
+            <span class="circular_point" style="background-color: green;" ></span>&nbsp;<small class="text-muted"><span class="fw-bolder text-black"> 10/03 Fri</span> : Vijay Prakash,Shantanu,Shayam Sundar</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="../Leave_Page_UI_New_HRMS/bootstrap.min.js"></script>
+    <script src="../Leave_Page_UI_New_HRMS/Calender/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".datepicker-input_from").datepicker({
+          format: "D dd/mm",
+        });
+        $('#date-icon-from').on('click', function () {
+          $('#date-from').focus();
+        })
+
+      });
+      $(document).ready(function () {
+        $(".datepicker-input_to").datepicker({
+          format: "D dd/mm",
+        });
+        $('#date-icon-to').on('click', function () {
+          $('#date-to').focus();
+        })
+      });
+      $(document).ready(function () {
+        $('[data-bs-toggle="tooltip"]').tooltip();
+      });
+    </script>
+</body>
+
+</html>

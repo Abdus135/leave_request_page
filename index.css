@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top_bar{
+    color: white;
+    padding-top: 12px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+.row{
+    padding-left: 11px;
+    margin: 0px;
+    margin-top: 3px;
+}
+
+small{
+    font-size: small;
+}
+
+
+.from input{
+    width: 60%;
+    font-weight: bolder;
+    font-size: small;
+}
+.to input{
+    width: 60%;
+    font-weight: bolder;
+    font-size: small;
+}
+.date_input{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.date_input img{
+    width: 17px;
+    position: relative;
+    left: 90px;
+    bottom: 32px;
+    cursor: pointer;
+}
+@media (max-width:1200px){
+    .date_input img{
+        left:85px;
+    }
+    
+    .date_input input{
+        width: 70%;
+    }
+    
+    .button-wrap{
+        position: relative;
+        bottom: 19px;
+        left: 183px;
+     }
+    
+    .elegant-calencar{
+        width: 120%;
+    }
+    .w-55{
+        width: 50% !important;
+    }
+    .team_leave_calender tbody td:after{
+        width: 39px;
+    }
+    
+}
+@media(max-width:990px){
+    .date_input img{
+        left: 90px;
+        
+    }
+    .date_input input{
+        width: 60%;
+    }
+    .button-wrap{
+        position: relative;
+        bottom: 19px;
+        left: 178px;
+     }
+     .head-month{
+        font-size: 14px
+     }
+     .w-55{
+        width: 14% !important;
+    }
+    .team_calender_head{
+        margin-left: 104px;
+    }
+   
+}
+/* .datepicker{
+    background: red;
+} */
+.check_box_inner{
+    display: flex ;
+    align-items: center;
+    padding: 4px;
+}
+.check_box_inner small{
+    padding-left: 8px;
+}
+input.checkbox{
+    height: 18px;
+    width: 20px;
+}
+.leave_type {
+    padding: 10px 0px;
+}
+
+.note{
+    padding: 15px 0px;
+}
+
+.notify{
+    padding: 15px 0px;
+}
+
+.cancel_btn{
+    width: 100px;
+    /* box-shadow: 0px 6px 5px rgba(0,0,0,0.75); */
+}
+.request_btn{
+    width: 130px;
+    /* box-shadow: 0px 6px 5px rgba(0,0,0,0.75); */
+    transform: translateX(25px);
+}
+.btn:hover{
+    translate: 0px -5px;
+    box-shadow: 0px 6px 5px rgba(0,0,0,0.75);
+    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-out;
+
+}
+.second{
+    margin-left: 36px;
+    margin-top: 26px;
+}
+.second>.parent_div{
+    background-color:gray;
+}
+.second >.parent_div> .leave_request_para{
+    margin-left: 3px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+.on_leave{
+    margin-left: 3px;
+    padding-left: 15px;
+}
+.profile_id{
+    padding: 0px;
+    padding-right: 4px;
+}
+.profile_id_list{
+    padding-left: 0px;
+    padding-top: 8px;
+}
+.profile_id img{
+    width: 45px;
+}
+.profile_id small{
+    font-weight: 645;
+    max-width: 70px;
+}
+.profile_id_more:hover{
+    text-decoration: underline;
+}
+.on_leave_parent{
+    max-width: 85%;
+}
+.profile_id small:hover{
+    cursor: pointer;
+}
+
+
+.leave_restriction > .outer_div{
+    margin-bottom: 18px;
+}
+.team_leave_calender{
+    height: fit-content;
+    padding-top: 20px;
+}
+.team_calender_head{
+    align-items: center;
+}
+.team_leave_calender > .para1{
+    width: fit-content;
+}
+.team_leave_calender_parent{
+    background-color: white;
+}
+.team_leave_calender_points>.para1 >.circular_point{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    
+}
